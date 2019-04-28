@@ -8,15 +8,15 @@ Compare to other noises that input images might have, makeup is a relatively fre
 
 ![flowchart2](https://raw.githubusercontent.com/weedkillers/Final-Report/master/FlowChart2.png)
 
- <center> **Figure. 1 Project Overview** </center>
+ <p align="center"> **Figure. 1 Project Overview** </p>
 
 
 ## Problem formulation
 
-As the significant advances in the field of face recognition, Deep Network, like FaceNet [@FaceNet], performed almost perfectly in academics. However, we all have the experiences that your iPhone wouldn’t ‘know’ you for some reasons, especially for girls with makeup. Due to the noise of input pictures in  application scenarios, Face Recognition technique requires not only modeling network, which have been well developed, but also picture pre-processing algorithms.   
-Compare to other noises that input images might have, makeup is a relatively frequent and formalized one. The applications of face recognition might benefit more from de-makeup technique. Therefore, our team is aiming to develop a network that can remove the makeup. What’s more, the de-makeup network itself is also a helpful and entertaining application.   
-Due to the lack of aligned images (before and after makeup), this de-makeup problem is tackled with an unsupervised approach. We used cycle Generative Adversarial Network(cycle GAN), based on the framework of cycle-consistent generative adversarial networks, to produce de-makeup face images. The approach include two asymmetric networks: a forward network transfer makeup style, whereas a backward network removes the makeup.      
-The network is trying to learn mapping functions between two domains, X and Y. The two mapping included in our model is $G: X \rightarrow Y$ and $F: Y \rightarrow X$. Two adversarial discriminators $D_X$ and $D_Y$ are also introduced, where $D_X$ is aiming to distinguish between images $\{ x \}$ and transformed images $\{ F(y)\}$ and $D_Y$ is aiming to distinguish between images $\{ y \}$ and transformed images $\{ F(x)\}$. The lost functions involved in our model can be defined as below:    
+<p>As the significant advances in the field of face recognition, Deep Network, like FaceNet [@FaceNet], performed almost perfectly in academics. However, we all have the experiences that your iPhone wouldn’t ‘know’ you for some reasons, especially for girls with makeup. Due to the noise of input pictures in  application scenarios, Face Recognition technique requires not only modeling network, which have been well developed, but also picture pre-processing algorithms.</p>   
+<p>Compare to other noises that input images might have, makeup is a relatively frequent and formalized one. The applications of face recognition might benefit more from de-makeup technique. Therefore, our team is aiming to develop a network that can remove the makeup. What’s more, the de-makeup network itself is also a helpful and entertaining application.</p>   
+<p>Due to the lack of aligned images (before and after makeup), this de-makeup problem is tackled with an unsupervised approach. We used cycle Generative Adversarial Network(cycle GAN), based on the framework of cycle-consistent generative adversarial networks, to produce de-makeup face images. The approach include two asymmetric networks: a forward network transfer makeup style, whereas a backward network removes the makeup. </p>     
+<p>The network is trying to learn mapping functions between two domains, X and Y. The two mapping included in our model is $G: X \rightarrow Y$ and $F: Y \rightarrow X$. Two adversarial discriminators $D_X$ and $D_Y$ are also introduced, where $D_X$ is aiming to distinguish between images $\{ x \}$ and transformed images $\{ F(y)\}$ and $D_Y$ is aiming to distinguish between images $\{ y \}$ and transformed images $\{ F(x)\}$. The lost functions involved in our model can be defined as below:</p>    
 
 $$
 \begin{aligned}
@@ -26,7 +26,9 @@ L_{full}(G,F,D_X,D_Y) &= L_{GAN}(G,D_Y,X,Y) + L_{GAN}(F,D_X,Y,X) + \lambda L_{cy
 G^\ast, F^\ast &= arg\ min_{G,F}\ max_{D_x, D_y}L_{full}(G,F,D_X,D_Y)
 \end{aligned}
 $$
-<center>**Equation. 1 Loss function of cycleGAN [@CycleGAN2017]**</center>
+
+
+<p align="center">**Equation. 1 Loss function of cycleGAN [@CycleGAN2017]**</p>
 
 ## Approach
 
