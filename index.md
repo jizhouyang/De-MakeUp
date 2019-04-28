@@ -126,7 +126,8 @@ The following figure shows the confidence distribution of the primary result and
 ## Future work
 
 Given our results, we also found some further problems and corresponding solutions, but due to time or other limitation, these solutions haven't been implemented yet.    
-<p>1) Our network currently can deal with asian images, since, after cleaning, our dataset contains only asians. In the future, if we can have enought data for the network to learn necessary features, we might use a network for classification, for instance skin color or hair color, and use the corresponding network trained with specific data.</p>
-<p>2) There were part of our result contain images affected by the background. In our project, the background always serves as noise and affect our generative performance. Therefore, we planed to use parsing algorithm to label our image which can reduce the effect of background noise. In addition, we noticed that the eye, lip and nose areas of face images have significant different styles and we can also use parsing algorithm to segment these areas which will be trained separatelly.</p>
+<ol><li> Our network currently can deal with asian images, since, after cleaning, our dataset contains only asians. In the future, if we can have enought data for the network to learn necessary features, we might use a network for classification, for instance skin color or hair color, and use the corresponding network trained with specific data.</li>
+<li> There were part of our result contain images affected by the background. In our project, the background always serves as noise and affect our generative performance. Therefore, we planed to use parsing algorithm to label our image which can reduce the effect of background noise. In addition, we noticed that the eye, lip and nose areas of face images have significant different styles and we can also use parsing algorithm to segment these areas which will be trained separatelly.</li>
+</ol>
 
 ## References
