@@ -36,7 +36,7 @@ In this process, we were iterating the process that updateing our method dependi
 2)We categorized our training dataset depending on skin and hair colors, restrcting the no-makeup domain andlimiting the features will be learned. 
 3)Given the makeup of eye region is different from lip region and skin region, a face parsing algorithm that segment face into component might be applied before training. However, in the origin paper [@CycleGAN], the author didn't describe the parsing algorithm in detail. We tried to develop our own parsing algorithm, but due to the limited time we have, we didn't finish the segmentation.
 </li></ol>
-## Comparision to the past works    
+<h2> Comparision to the past works </h2>   
 We found several literatures that dealing with the similar problem, makeup transfer and removal, for instance PairedCycleGAN [@CycleGAN], makeup detector and remover framework[@FaceBehind], and Image-to-Image Translation [@imagetranslation]. In the above literature, their work can produce impressive de-makeup face image, however, to our best knowledge, relative less investigator tried to make use of the de-makeup networks on top of face recognition application.    
 
 ## Results
