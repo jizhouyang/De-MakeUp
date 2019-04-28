@@ -24,13 +24,13 @@ Compare to other noises that input images might have, makeup is a relatively fre
 ## Approach
 
 Our project can be roughly divided into three phase and within each pahse, we solved different problems.    
-<ol> <li><br><b>Data collection and literature research:</b></br>    
+<ol><li><b>Data collection and literature research:</b>    
  In the beginning of our project, we reviewed related paper and developed our method. In addition, we contacted the author of BeautyGAN [@BeautyGAN] and were authorized to use their large Makeup Transfer dataset. To enrich our training in advance, we also collected images manually, but due to the poor training performance, these data were discarded.</li>    
-<li><br><b>Implementation and training:</b></br>   
+<li><b>Implementation and training:</b>   
 After the settlement of method and data, we finished the implementation of cycleGAN network using Tensorflow, referring to the Zhu's paper[@CycleGAN2017] and some high-stared github respository, and trained on Google Cloud Platform.  
-![avatar](https://raw.githubusercontent.com/weedkillers/Final-Report/master/fcycle%20architecure.jpg)
+<img src="https://raw.githubusercontent.com/weedkillers/Final-Report/master/fcycle%20architecure.jpg">
 <p align="center"> <b>Figure. 2 Cycle GAN Structure</b></p></li>
-<li><br><b>Optimization of performance:</b></br>
+<li><b>Optimization of performance:</b>
 In this process, we were iterating the process that updateing our method depending on feedbacks of training result and in the end, we increased our output performance significantly. In the process, we applied three solution helping with our performance. 
 1) After each iteration, we fine tuned the parameters to get better result. 
 2) We categorized our training dataset depending on skin and hair colors, restrcting the no-makeup domain andlimiting the features will be learned. 
