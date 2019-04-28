@@ -139,3 +139,5 @@ Given our results, we also found some further problems and corresponding solutio
 <p>[2] Chang, H., Lu, J., Yu, F., Finkelstein, A. Pairedcyclegan: Asymmetric style transfer for applying and removing makeup, in: <i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2018.</p>
 <p>[3] F. Schroff, D. Kalenichenko, and J. Philbin. Facenet: A unified embedding for face recognition and clustering. <i>arXiv preprint arXiv:1503.03832,</i> 2015.</p>
 <p>[4] S. Wang and Y. Fu. Face behind makeup. <i>AAAI Conference on Artificial Intelligence,</i> 2016</p>
+<p>[5] C. Chen, A. Dantcheva, and A. Ross. Automatic facial makeup detection with application in face recognition. In <i>ICB</i>, pages 1–8, 2013</p>
+<p>[6] Li, T., Qian, R., Dong, C., Liu, S., Yan, Q., Zhu, W., Lin, L.: Beautygan: Instance-level facial makeup transfer with deep generative adversarial network. In: ACM MM (2018)</p>
