@@ -135,4 +135,4 @@ Given our results, we also found some further problems and corresponding solutio
 </ol>
 
 ## References
-[1]<p style="margin-left: 40px">Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros. Unpaired image-to-image translation using cycle-consistent adversarial networks. <i>CoRR</i>, abs/1703.10593, 2017.</p>
+<p style="margin-left: 30px">[1]Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros. Unpaired image-to-image translation using cycle-consistent adversarial networks. <i>CoRR</i>, abs/1703.10593, 2017.</p>
