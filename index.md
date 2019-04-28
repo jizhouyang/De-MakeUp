@@ -6,7 +6,7 @@ Compare to other noises that input images might have, makeup is a relatively fre
 
 ![flowchart2](https://raw.githubusercontent.com/weedkillers/Final-Report/master/FlowChart2.png)
 
- <p align="center"> **Figure. 1 Project Overview** </p>
+ <p align="center"> <b>Figure. 1 Project Overview</b> </p>
 
 
 ## Problem formulation
@@ -19,7 +19,7 @@ Compare to other noises that input images might have, makeup is a relatively fre
 <p align="center"><img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/formula.PNG"></p>
 
 
-<p align="center">**Equation. 1 Loss function of cycleGAN [@CycleGAN2017]**</p>
+<p align="center"><b>Equation. 1 Loss function of cycleGAN [@CycleGAN2017]</b></p>
 
 ## Approach
 
@@ -52,7 +52,7 @@ We found several literatures that dealing with the similar problem, makeup trans
 
 
 
-<p align="center"> **Figure. 1 Test Input images (left), primary result (middle) and final result (right)** </p>
+<p align="center"> <b>Figure. 1 Test Input images (left), primary result (middle) and final result (right)</b> </p>
 
 As shown above, we can see that in our primary output, instead of transfering makeup, the network was actually transfering 'race' and in the meantime, keep the images aligned. Even thought this was an interesting application, it did reflected our one of our problem. The distribution of our training data is biased by the selection of images, which will make the mapping functions learned by our network odd and produce funny results. When we go back to our dataset, we found our data was biased in several ways and we improved the performance after data catorization and tuning.
 
@@ -65,7 +65,7 @@ Background: Background in the images always severe as noise and our network migh
  <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX46-1.png" width = '150'>
  <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX46-2.png"  width = '150'>
 </p>
-<p align="center"> **Figure. Test input image (left), and results with abnormal background (primary (middle) and final (right))** </p>
+<p align="center"> <b>Figure. Test input image (left), and results with abnormal background (primary (middle) and final (right))</b> </p>
  </li>
 <li>
 Other noise in image: Other noise might come from accessaries, glasses, hat or other object in the image.These images are only minor part of training dataset, but they will affect the performance a lot. After cleaned our training dataset, we can see the result is robust to these noise.
@@ -81,7 +81,7 @@ Other noise in image: Other noise might come from accessaries, glasses, hat or o
  <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX21-1.png" width = '150'>
  <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX21-2.png"  width = '150'>
 </p>
-<p align="center"> **Figure. Test Input images with other noise (left), primary result (middle) and final result (right)** </p>
+<p align="center"> <b>Figure. Test Input images with other noise (left), primary result (middle) and final result (right)</b> </p>
 </li>
 </ol>
 <p>
