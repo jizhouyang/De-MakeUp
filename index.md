@@ -136,6 +136,6 @@ Given our results, we also found some further problems and corresponding solutio
 
 ## References
 <p>[1] Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros. Unpaired image-to-image translation using cycle-consistent adversarial networks. <i>CoRR</i>, abs/1703.10593, 2017.</p>
-<p>[2] Chang, H., Lu, J., Yu, F., Finkelstein, A., 2018. Pairedcyclegan: Asymmetric style transfer for applying and removing makeup, in: 2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR).</p>
+<p>[2] Chang, H., Lu, J., Yu, F., Finkelstein, A.. Pairedcyclegan: Asymmetric style transfer for applying and removing makeup, in: <i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2018.</p>
 <p>[3] F. Schroff, D. Kalenichenko, and J. Philbin. Facenet: A unified embedding for face recognition and clustering. <i>arXiv preprint arXiv:1503.03832,</i> 2015.</p>
 <p>[4] S. Wang and Y. Fu. Face behind makeup. <i>AAAI Conference on Artificial Intelligence,</i> 2016</p>
