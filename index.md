@@ -136,4 +136,4 @@ Given our results, we also found some further problems and corresponding solutio
 
 ## References
 <p>[1] Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros. Unpaired image-to-image translation using cycle-consistent adversarial networks. <i>CoRR</i>, abs/1703.10593, 2017.</p>
-<p>[2] Chang, H., Lu, J., Yu, F., Finkelstein, A., 2018. Pairedcyclegan: Asymmetric style transfer for applying and removing makeup, in: <i>2018 IEEE Conference on Computer Vision and Pattern Recognition</i> (CVPR).</p>
+<p>[2] Chang, H., Lu, J., Yu, F., Finkelstein, A., 2018. Pairedcyclegan: Asymmetric style transfer for applying and removing makeup, in: 2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR).</p>
