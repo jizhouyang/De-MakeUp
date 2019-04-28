@@ -4,6 +4,7 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+markdown: maruku
 include:
   - CONTRIBUTING.md
   - README.md
