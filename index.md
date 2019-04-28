@@ -1,7 +1,7 @@
 <p align="right"> Team Fancy: Wuwei Cai, Jizhou Yang, Yufei Xie, Menglin Wang </p>
 
 ## Introduction
-As the significant advances in the field of face recognition, Deep Network, like FaceNet [@FaceNet], performed almost perfectly in academics. However, we all have the experiences that your iPhone wouldn’t ‘know’ you for some reasons, especially for girls with makeup. Due to the noise of input pictures in  application scenarios, Face Recognition technique requires not only modeling network, which have been well developed, but also picture pre-processing algorithms.   
+As the significant advances in the field of face recognition, Deep Network, like FaceNet [1], performed almost perfectly in academics. However, we all have the experiences that your iPhone wouldn’t ‘know’ you for some reasons, especially for girls with makeup. Due to the noise of input pictures in  application scenarios, Face Recognition technique requires not only modeling network, which have been well developed, but also picture pre-processing algorithms.   
 Compare to other noises that input images might have, makeup is a relatively frequent and formalized one. The applications of face recognition might benefit more from de-makeup technique. Therefore, our team is aiming to develop a network that can remove the makeup. What’s more, the de-makeup network itself is also a helpful and entertaining application.
 
 ![flowchart2](https://raw.githubusercontent.com/weedkillers/Final-Report/master/FlowChart2.png)
@@ -11,7 +11,7 @@ Compare to other noises that input images might have, makeup is a relatively fre
 
 ## Problem formulation
 
-<p>As the significant advances in the field of face recognition, Deep Network, like FaceNet [@FaceNet], performed almost perfectly in academics. However, we all have the experiences that your iPhone wouldn’t ‘know’ you for some reasons, especially for girls with makeup. Due to the noise of input pictures in  application scenarios, Face Recognition technique requires not only modeling network, which have been well developed, but also picture pre-processing algorithms.</p>   
+<p>As the significant advances in the field of face recognition, Deep Network, like FaceNet [1], performed almost perfectly in academics. However, we all have the experiences that your iPhone wouldn’t ‘know’ you for some reasons, especially for girls with makeup. Due to the noise of input pictures in  application scenarios, Face Recognition technique requires not only modeling network, which have been well developed, but also picture pre-processing algorithms.</p>   
 <p>Compare to other noises that input images might have, makeup is a relatively frequent and formalized one. The applications of face recognition might benefit more from de-makeup technique. Therefore, our team is aiming to develop a network that can remove the makeup. What’s more, the de-makeup network itself is also a helpful and entertaining application.</p>   
 <p>Due to the lack of aligned images (before and after makeup), this de-makeup problem is tackled with an unsupervised approach. We used cycle Generative Adversarial Network(cycle GAN), based on the framework of cycle-consistent generative adversarial networks, to produce de-makeup face images. The approach include two asymmetric networks: a forward network transfer makeup style, whereas a backward network removes the makeup. </p>     
 <p>The network is trying to learn mapping functions between two domains, X and Y. The two mapping included in our model is <img src="http://latex.codecogs.com/gif.latex?%24G%3A%20X%20%5Crightarrow%20Y%24"> and <img src="http://latex.codecogs.com/gif.latex?%24F%3A%20Y%20%5Crightarrow%20X%24">. Two adversarial discriminators <img src="http://latex.codecogs.com/gif.latex?%24D_X%24"> and <img src="http://latex.codecogs.com/gif.latex?%24D_Y%24"> are also introduced, where <img src="http://latex.codecogs.com/gif.latex?%24D_X%24"> is aiming to distinguish between images X and transformed images F(y) and <img src="http://latex.codecogs.com/gif.latex?%24D_Y%24"> is aiming to distinguish between images y and transformed images F(x). The lost functions involved in our model can be defined as below:</p>    
@@ -19,26 +19,26 @@ Compare to other noises that input images might have, makeup is a relatively fre
 <p align="center"><img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/formula.PNG"></p>
 
 
-<p align="center"><b>Equation. 1 Loss function of cycleGAN [@CycleGAN2017]</b></p>
+<p align="center"><b>Equation. 1 Loss function of cycleGAN [2]</b></p>
 
 ## Approach
 
 Our project can be roughly divided into three phase and within each pahse, we solved different problems.    
 <ol><li><b>Data collection and literature research:</b>    
- <p>In the beginning of our project, we reviewed related paper and developed our method. In addition, we contacted the author of BeautyGAN [@BeautyGAN] and were authorized to use their large Makeup Transfer dataset. To enrich our training in advance, we also collected images manually, but due to the poor training performance, these data were discarded.</p></li>    
+ <p>In the beginning of our project, we reviewed related paper and developed our method. In addition, we contacted the author of BeautyGAN [6] and were authorized to use their large Makeup Transfer dataset. To enrich our training in advance, we also collected images manually, but due to the poor training performance, these data were discarded.</p></li>    
 <li><b>Implementation and training:</b>   
-<p>After the settlement of method and data, we finished the implementation of cycleGAN network using Tensorflow, referring to the Zhu's paper[@CycleGAN2017] and some high-stared github respository, and trained on Google Cloud Platform.</p>  
+<p>After the settlement of method and data, we finished the implementation of cycleGAN network using Tensorflow, referring to the Zhu's paper[2] and some high-stared github respository, and trained on Google Cloud Platform.</p>  
 <img src="https://raw.githubusercontent.com/weedkillers/Final-Report/master/fcycle%20architecure.jpg">
 <p align="center"> <b>Figure. 2 Cycle GAN Structure</b></p></li>
 <li><b>Optimization of performance:</b>
 <p>In this process, we were iterating the process that updateing our method depending on feedbacks of training result and in the end, we increased our output performance significantly. In the process, we applied three solution helping with our performance.</p> 
 <ul><li>After each iteration, we fine tuned the parameters to get better result.</li>
 <li>We categorized our training dataset depending on skin and hair colors, restrcting the no-makeup domain andlimiting the features will be learned.</li> 
-<li>Given the makeup of eye region is different from lip region and skin region, a face parsing algorithm that segment face into component might be applied before training. However, in the origin paper [@CycleGAN], the author didn't describe the parsing algorithm in detail. We tried to develop our own parsing algorithm, but due to the limited time we have, we didn't finish the segmentation.</li>
+<li>Given the makeup of eye region is different from lip region and skin region, a face parsing algorithm that segment face into component might be applied before training. However, in the origin paper [3], the author didn't describe the parsing algorithm in detail. We tried to develop our own parsing algorithm, but due to the limited time we have, we didn't finish the segmentation.</li>
 </ul>
 </li></ol>
 <h2> Comparision to the past works </h2>   
-We found several literatures that dealing with the similar problem, makeup transfer and removal, for instance PairedCycleGAN [@CycleGAN], makeup detector and remover framework[@FaceBehind], and Image-to-Image Translation [@imagetranslation]. In the above literature, their work can produce impressive de-makeup face image, however, to our best knowledge, relative less investigator tried to make use of the de-makeup networks on top of face recognition application.    
+We found several literatures that dealing with the similar problem, makeup transfer and removal, for instance PairedCycleGAN [3], makeup detector and remover framework[4], and Image-to-Image Translation [2]. In the above literature, their work can produce impressive de-makeup face image, however, to our best knowledge, relative less investigator tried to make use of the de-makeup networks on top of face recognition application.    
 
 ## Results
 <p align="center">
