@@ -1,4 +1,4 @@
-<p align="center"> **<font size=6>De-Makeup Project Final Report</font>** </p>
+<p align="right"> **De-Makeup Project Final Report** </p>
 <p align="right"> Team Fancy: Wuwei Cai, Jizhou Yang, Yufei Xie, Menglin Wang </p>
 
 ## Introduction
