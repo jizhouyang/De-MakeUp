@@ -30,7 +30,7 @@ Our project can be roughly divided into three phase and within each pahse, we so
 After the settlement of method and data, we finished the implementation of cycleGAN network using Tensorflow, referring to the Zhu's paper[@CycleGAN2017] and some high-stared github respository, and trained on Google Cloud Platform.  
 ![avatar](https://raw.githubusercontent.com/weedkillers/Final-Report/master/fcycle%20architecure.jpg)
 <p align="center"> <b>Figure. 2 Cycle GAN Structure</b></p>
-3. **Optimization of performance**    
+3. <h2>Optimization of performance</h2>  
 In this process, we were iterating the process that updateing our method depending on feedbacks of training result and in the end, we increased our output performance significantly. In the process, we applied three solution helping with our performance. 1) After each iteration, we fine tuned the parameters to get better result. 2) We categorized our training dataset depending on skin and hair colors, restrcting the no-makeup domain andlimiting the features will be learned. 3) Given the makeup of eye region is different from lip region and skin region, a face parsing algorithm that segment face into component might be applied before training. However, in the origin paper [@CycleGAN], the author didn't describe the parsing algorithm in detail. We tried to develop our own parsing algorithm, but due to the limited time we have, we didn't finish the segmentation.    
 
 ## Comparision to the past works    
