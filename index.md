@@ -91,7 +91,7 @@ As shown above, we can see that in our primary output, instead of transfering ma
 <p>
 In addition, we use Microsoft Azure Face recognition system to test whether our final result can better match the input. We put the images with make-up into the recognition library and check the similarity between our generated images without make-up and the images of the recognition library. </p>
 The following figure shows the confidence distribution of the primary result and final result.
-<p align="center"><img src = "https://github.com/jizhouyang/De-MakeUp/blob/master/Data.png" height="300" width = "300"></p>
+<p align="center"><img src = "https://github.com/jizhouyang/De-MakeUp/blob/master/Data1.jpg" height="300" width = "300"></p>
 <p>It can be seen from the following figure that the average confidence increases 4 percent and P-value is less than 0.001. This indicates that the distributions of two groups of result are different. In otherwords, the final result is better than the primary result.</p>
 <table align="center">
   <thead>
