@@ -1,3 +1,4 @@
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <p align="right"> Team Fancy: Wuwei Cai, Jizhou Yang, Yufei Xie, Menglin Wang </p>
 
 ## Introduction
