@@ -31,7 +31,7 @@ Our project can be roughly divided into three phase and within each pahse, we so
 <img src="https://raw.githubusercontent.com/weedkillers/Final-Report/master/fcycle%20architecure.jpg">
 <p align="center"> <b>Figure. 2 Cycle GAN Structure</b></p></li>
 <li><b>Optimization of performance:</b>
-<p>In this process, we were iterating the process that updateing our method depending on feedbacks of training result and in the end, we increased our output performance significantly. In the process, we applied three solution helping with our performance.</p> 
+<br>In this process, we were iterating the process that updateing our method depending on feedbacks of training result and in the end, we increased our output performance significantly. In the process, we applied three solution helping with our performance.</br> 
 <ul><li>After each iteration, we fine tuned the parameters to get better result.</li>
 <li>We categorized our training dataset depending on skin and hair colors, restrcting the no-makeup domain andlimiting the features will be learned.</li> 
 <li>Given the makeup of eye region is different from lip region and skin region, a face parsing algorithm that segment face into component might be applied before training. However, in the origin paper [@CycleGAN], the author didn't describe the parsing algorithm in detail. We tried to develop our own parsing algorithm, but due to the limited time we have, we didn't finish the segmentation.</li>
