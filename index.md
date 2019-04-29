@@ -42,21 +42,12 @@ We found several literatures that dealing with the similar problem, makeup trans
 
 ## Results
 <p align="center">
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX74-0.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX74-1.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX74-2.png"  width = '150'>
-</p>
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX26-0.png" width = '150'><img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX26-1.png" width = '150'><img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX26-2.png"  width = '150'>
-</p>
-<p align="center">
-    <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX16-O.png" width = '150'><img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX16-1.png" width = '150'><img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX16-2.png"  width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/Result.png">
 </p> 
 
 
 
-<p align="center"> <b>Figure. 1 Test Input images (left), primary result (middle) and final result (right)</b> </p>
+<p align="center"> <b>Figure. 1 Test Input images (First Row), primary result (Second Row) and final result (Third Row)</b> </p>
 
 As shown above, we can see that in our primary output, instead of transfering makeup, the network was actually transfering 'race' and in the meantime, keep the images aligned. Even thought this was an interesting application, it did reflected our one of our problem. The distribution of our training data is biased by the selection of images, which will make the mapping functions learned by our network odd and produce funny results. When we go back to our dataset, we found our data was biased in several ways and we improved the performance after data catorization and tuning.
 
