@@ -4,7 +4,7 @@
 As the significant advances in the field of face recognition, Deep Network, like FaceNet [1], performed almost perfectly in academics. However, we all have the experiences that your iPhone wouldn’t ‘know’ you for some reasons, especially for girls with makeup. Due to the noise of input pictures in  application scenarios, Face Recognition technique requires not only modeling network, which have been well developed, but also picture pre-processing algorithms.   
 Compare to other noises that input images might have, makeup is a relatively frequent and formalized one. The applications of face recognition might benefit more from de-makeup technique. Therefore, our team is aiming to develop a network that can remove the makeup. What’s more, the de-makeup network itself is also a helpful and entertaining application.
 
-![flowchart2](https://raw.githubusercontent.com/weedkillers/Final-Report/master/FlowChart2.png)
+![flowchart2](https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/FlowChart2.png)
 
  <p align="center"> <b>Figure. 1 Project Overview</b> </p>
 
@@ -56,9 +56,9 @@ As shown above, we can see that in our primary output, instead of transfering ma
 <li>
 Background: Background in the images always severe as noise and our network might transfer the backgound into abnormal color or mix it with hair. But we haven't developed an effective way to solve this problem.
 <p align="center">
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX46-0.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX46-1.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX46-2.png"  width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX46-0.png" width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX46-1.png" width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX46-2.png"  width = '150'>
 </p>
 <p align="center"> <b>Figure. Test input image (left), and results with abnormal background (primary (middle) and final (right))</b> </p>
  </li>
@@ -66,15 +66,15 @@ Background: Background in the images always severe as noise and our network migh
 Other noise in image: Other noise might come from accessaries, glasses, hat or other object in the image.These images are only minor part of training dataset, but they will affect the performance a lot. After cleaned our training dataset, we can see the result is robust to these noise.
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX19-0.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX19-1.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX19-2.png"  width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX19-0.png" width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX19-1.png" width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX19-2.png"  width = '150'>
 </p>
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX21-0.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX21-1.png" width = '150'>
- <img src="https://raw.githubusercontent.com/weedkillers/Hello-World/master/vHX21-2.png"  width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX21-0.png" width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX21-1.png" width = '150'>
+ <img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/img/vHX21-2.png"  width = '150'>
 </p>
 <p align="center"> <b>Figure. Test Input images with other noise (left), primary result (middle) and final result (right)</b> </p>
 </li>
