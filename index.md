@@ -28,7 +28,7 @@ Our project can be roughly divided into three phase and within each pahse, we so
  <p>In the beginning of our project, we reviewed related paper and developed our method. In addition, we contacted the author of BeautyGAN [6] and were authorized to use their large Makeup Transfer dataset. To enrich our training in advance, we also collected images manually, but due to the poor training performance, these data were discarded.</p></li>    
 <li><b>Implementation and training:</b>   
 <p>After the settlement of method and data, we finished the implementation of cycleGAN network using Tensorflow, referring to the Zhu's paper[2] and some high-stared github respository, and trained on Google Cloud Platform.</p>  
-<img src="https://raw.githubusercontent.com/weedkillers/Final-Report/master/fcycle%20architecure.jpg">
+<img src="https://raw.githubusercontent.com/jizhouyang/De-MakeUp/master/fcycle%20architecure.jpg">
 <p align="center"> <b>Figure. 2 Cycle GAN Structure</b></p></li>
 <li><b>Optimization of performance:</b>
 <p>In this process, we were iterating the process that updateing our method depending on feedbacks of training result and in the end, we increased our output performance significantly. In the process, we applied three solution helping with our performance.</p> 
